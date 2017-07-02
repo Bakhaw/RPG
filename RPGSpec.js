@@ -4,13 +4,13 @@ describe("game", function() {
      game = new Game();
    });
    it("Créer son personnage", function() {
-     game.personnage("Elementaliste", "Semuno", 5000, true, "Glace");
+     game.personnage("Elementaliste", "Semuno", 5000, true, "Glace", "Baton");
      expect(game.classe).toEqual("Elementaliste");
      expect(game.nom).toEqual("Semuno");
      expect(game.vie).toEqual(5000);
      expect(game.inventaire).toEqual(true);
      expect(game.element).toEqual("Glace");
-
+     expect(game.arme).toEqual("Baton");
    });
 
      it("Créer ses stats de base", function() {

@@ -1,10 +1,11 @@
 var Game = function() {
-  this.personnage = function(classe, nom, vie, inventaire, element) {
+  this.personnage = function(classe, nom, vie, inventaire, element, arme) {
     this.classe = classe;
     this.nom = nom;
     this.vie = vie;
     this.inventaire = inventaire;
     this.element = element;
+    this.arme = arme;
   };
 
   this.stats = function(int, dex, force, def, lvl) {
